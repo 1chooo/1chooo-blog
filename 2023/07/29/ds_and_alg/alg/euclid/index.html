@@ -13,36 +13,29 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="http://example.com/2023/07/29/nuphy_unboxing/"/>
+    <link rel="canonical" href="http://example.com/2023/07/29/ds_and_alg/alg/euclid/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta name="description" content="對於機械鍵盤小白的我來說，每個軸體、手感、鍵帽等⋯⋯挑選鍵盤的考量對我來說都非常新奇，身為曾經買過一把機械鍵盤的我來說，正是個適合探索更多鍵盤的時機，於是決定購入觀望已久的鍵盤品牌 Nuphy — Halo 65。 鍵盤本體  本文綱要 購買前的心理建設 開箱和小插曲 敲擊手感分享 結論 我的推薦碼   購買前的心理建設首先，這隻鍵盤是 Nuphy 少有的正常尺寸設計，也就是非矮軸的設計，從各個開">
+        <meta name="description" content="大家在過往學習的經驗中，可能都有聽過歐幾里德這名鼎鼎大名的人物，是位在希臘化時期的數學家，有著著名著作「幾何原本」，在數學領域中有著極大化的貢獻，為現今眾多數學家所認同。 Euclid and Geometry 然而在古希臘的時代的數學家竟然能跟演算法畫上關係，畢竟演算法便是透過有限的步驟中，將給定的輸入做出最有效的解決，並且在執行玩這些有效的步驟中會有正當的終止，產生最後輸出結果，而歐幾里德演算">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Nuphy 鍵盤初體驗">
-<meta property="og:url" content="http://example.com/2023/07/29/nuphy_unboxing/index.html">
+<meta property="og:title" content="演算法第一講——Euclid Algorithm 歐幾里得演算法">
+<meta property="og:url" content="http://example.com/2023/07/29/ds_and_alg/alg/euclid/index.html">
 <meta property="og:site_name" content="1chooo&#39;s Blog">
-<meta property="og:description" content="對於機械鍵盤小白的我來說，每個軸體、手感、鍵帽等⋯⋯挑選鍵盤的考量對我來說都非常新奇，身為曾經買過一把機械鍵盤的我來說，正是個適合探索更多鍵盤的時機，於是決定購入觀望已久的鍵盤品牌 Nuphy — Halo 65。 鍵盤本體  本文綱要 購買前的心理建設 開箱和小插曲 敲擊手感分享 結論 我的推薦碼   購買前的心理建設首先，這隻鍵盤是 Nuphy 少有的正常尺寸設計，也就是非矮軸的設計，從各個開">
+<meta property="og:description" content="大家在過往學習的經驗中，可能都有聽過歐幾里德這名鼎鼎大名的人物，是位在希臘化時期的數學家，有著著名著作「幾何原本」，在數學領域中有著極大化的貢獻，為現今眾多數學家所認同。 Euclid and Geometry 然而在古希臘的時代的數學家竟然能跟演算法畫上關係，畢竟演算法便是透過有限的步驟中，將給定的輸入做出最有效的解決，並且在執行玩這些有效的步驟中會有正當的終止，產生最後輸出結果，而歐幾里德演算">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://miro.medium.com/v2/resize:fit:828/format:webp/1*kEKLUPfj6VwF0zPckvIrVg.png">
-<meta property="og:image" content="https://miro.medium.com/v2/resize:fit:828/format:webp/1*nh7Q6SXwkOafr41Xcf1z8Q.png">
-<meta property="og:image" content="https://miro.medium.com/v2/resize:fit:640/format:webp/1*kS0XCBaLnimxfNoQW_RovQ.png">
-<meta property="og:image" content="https://miro.medium.com/v2/resize:fit:640/format:webp/1*zOqw6LpKMPaEF2tgFv7Log.png">
-<meta property="og:image" content="https://miro.medium.com/v2/resize:fit:640/format:webp/1*kS0XCBaLnimxfNoQW_RovQ.png">
-<meta property="og:image" content="https://miro.medium.com/v2/resize:fit:640/format:webp/1*zOqw6LpKMPaEF2tgFv7Log.png">
-<meta property="og:image" content="https://miro.medium.com/v2/resize:fit:640/format:webp/1*OFULCyRHkQLvKcGkAAxjGQ.png">
-<meta property="og:image" content="https://miro.medium.com/v2/resize:fit:640/format:webp/1*T2v-Mfj5wnioRGFyLOPrig.png">
-<meta property="og:image" content="https://miro.medium.com/v2/resize:fit:640/format:webp/1*OFULCyRHkQLvKcGkAAxjGQ.png">
-<meta property="og:image" content="https://miro.medium.com/v2/resize:fit:640/format:webp/1*T2v-Mfj5wnioRGFyLOPrig.png">
-<meta property="og:image" content="https://miro.medium.com/v2/resize:fit:828/format:webp/1*4PwD-P6aBdwGi72ztblR5Q.png">
-<meta property="article:published_time" content="2023-07-29T15:27:41.857Z">
-<meta property="article:modified_time" content="2023-07-29T17:20:54.970Z">
+<meta property="og:image" content="https://miro.medium.com/v2/resize:fit:1340/format:webp/1*xS3rVXn57DTerPNCZuOJ_g.jpeg">
+<meta property="og:image" content="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*ZtKWx4DZ0FY6SBSctDWtUQ.png">
+<meta property="og:image" content="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*GLbMrGYdxAAT-3Vee-vXDA.png">
+<meta property="og:image" content="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*GLbMrGYdxAAT-3Vee-vXDA.png">
+<meta property="article:published_time" content="2023-07-29T15:27:41.833Z">
+<meta property="article:modified_time" content="2023-07-29T17:52:18.455Z">
 <meta property="article:author" content="Hugo ChunHo Lin">
-<meta property="article:tag" content="Nuphy">
-<meta property="article:tag" content="keyboard">
+<meta property="article:tag" content="algorithm">
+<meta property="article:tag" content="note">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://miro.medium.com/v2/resize:fit:828/format:webp/1*kEKLUPfj6VwF0zPckvIrVg.png">
+<meta name="twitter:image" content="https://miro.medium.com/v2/resize:fit:1340/format:webp/1*xS3rVXn57DTerPNCZuOJ_g.jpeg">
     
     
     <!--- Icon Part-->
@@ -54,7 +47,7 @@
     
     <title>
         
-            Nuphy 鍵盤初體驗 -
+            演算法第一講——Euclid Algorithm 歐幾里得演算法 -
         
         1chooo&#39;s Blog
     </title>
@@ -81,7 +74,7 @@
     <script id="hexo-configurations">
     let Global = window.Global || {};
     Global.hexo_config = {"hostname":"example.com","root":"/","language":"en","path":"search.xml"};
-    Global.theme_config = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":true,"link_icon":true},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":false,"list":["he/him"]},"code_block":{"copy":true,"style":"simple","font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":false,"lazyload":true,"recommendation":{"enable":true,"title":"Recommendation","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"busuanzi_counter":{"enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"pjax":true,"open_graph":true,"google_analytics":{"enable":false,"id":null}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/NCU.png","dark":"/images/NCU.png"},"title":"1chooo's Blog","subtitle":{"text":["This is Ho","The student who eager to CS"],"hitokoto":{"enable":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":true,"links":{"github":"https://github.com/1chooo","instagram":"https://www.instagram.com/lcho____/","zhihu":null,"twitter":"https://twitter.com/1chooo___","email":"hugo970217@gmail.com","linkedin":"https://www.linkedin.com/in/1chooo/","medium":"https://medium.com/@1chooo"}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":false,"type":"fixed","audios":[{"name":null,"artist":null,"url":null,"cover":null}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.2.2","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"},"Categories":{"icon":"fa-solid fa-folder","path":"/categories/"},"Tags":{"icon":"fa-solid fa-tags","path":"/tags/"},"About":{"icon":"fa-regular fa-user","submenus":{"Personal/CV":"/about","GitHub":"https://github.com/1chooo","Linkedin":"https://www.linkedin.com/in/1chooo/","Projects":"https://sites.google.com/g.ncu.edu.tw/1chooo"}}},"search":{"enable":true,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"cloud"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":"HaHa This is Hugo","links":{"Tags":{"path":"/tags","icon":"fa-regular fa-tags"},"Categories":{"path":"/categories","icon":"fa-regular fa-folder"}}},"article_date_format":"auto","categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}},"footerStart":"2023/2/10 05:20:00"};
+    Global.theme_config = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":true,"link_icon":true},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":false,"list":["he/him"]},"code_block":{"copy":true,"style":"simple","font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":false,"lazyload":true,"recommendation":{"enable":true,"title":"Recommendation","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"busuanzi_counter":{"enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"pjax":true,"open_graph":true,"google_analytics":{"enable":false,"id":null}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/NCU.png","dark":"/images/NCU.png"},"title":"1chooo's Blog","subtitle":{"text":["This is Ho","The student who eager to CS"],"hitokoto":{"enable":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":true,"links":{"github":"https://github.com/1chooo","instagram":"https://www.instagram.com/lcho____/","zhihu":null,"twitter":"https://twitter.com/1chooo___","email":"hugo970217@gmail.com","linkedin":"https://www.linkedin.com/in/1chooo/","medium":"https://medium.com/@1chooo"}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":false,"type":"fixed","audios":[{"name":null,"artist":null,"url":null,"cover":null}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.2.2","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"},"Categories":{"icon":"fa-solid fa-folder","path":"/categories/"},"Tags":{"icon":"fa-solid fa-tags","path":"/tags/"},"About":{"icon":"fa-regular fa-user","submenus":{"Personal/CV":"/about","GitHub":"https://github.com/1chooo","Linkedin":"https://www.linkedin.com/in/1chooo/","Projects":"https://sites.google.com/g.ncu.edu.tw/1chooo"}}},"search":{"enable":true,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"cloud"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":"23\" SWE Internship @PEGATRON, 5th Student Ambassador @AWS","links":{"Resume/CV":{"path":"/about","icon":"fa-regular fa-user"},"Github":{"path":"https://github.com/1chooo","icon":"fa-brands fa-github"},"Linkedin":{"path":"https://www.linkedin.com/in/1chooo/","icon":"fa-brands fa-linkedin"}}},"article_date_format":"auto","categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}},"footerStart":"2023/2/10 05:20:00"};
     Global.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
     Global.data_config = {"masonry":false};
   </script>
@@ -362,9 +355,9 @@
                 
                   
                   
-                    <img src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*kEKLUPfj6VwF0zPckvIrVg.png" alt="Nuphy 鍵盤初體驗" />
+                    <img src="https://miro.medium.com/v2/resize:fit:1340/format:webp/1*xS3rVXn57DTerPNCZuOJ_g.jpeg" alt="演算法第一講——Euclid Algorithm 歐幾里得演算法" />
                   
-                  <h1 class="article-title-cover">Nuphy 鍵盤初體驗</h1>
+                  <h1 class="article-title-cover">演算法第一講——Euclid Algorithm 歐幾里得演算法</h1>
                 
               </div>
               
@@ -393,8 +386,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2023-07-30 01:20:54</span>
-            <span class="mobile">2023-07-30 01:20:54</span>
+            <span class="desktop">2023-07-30 01:52:18</span>
+            <span class="mobile">2023-07-30 01:52:18</span>
             <span class="hover-info">Updated</span>
         </span>
     
@@ -408,7 +401,7 @@
                     
                         
                         <li>
-                            <a href="/categories/unboxing/">unboxing</a>&nbsp;
+                            <a href="/categories/Algorithm/">Algorithm</a>&nbsp;
                         </li>
                     
                     
@@ -422,11 +415,11 @@
             <ul>
                 
                     <li>
-                        <a href="/tags/Nuphy/">Nuphy</a>&nbsp;
+                        <a href="/tags/algorithm/">algorithm</a>&nbsp;
                     </li>
                 
                     <li>
-                        | <a href="/tags/keyboard/">keyboard</a>&nbsp;
+                        | <a href="/tags/note/">note</a>&nbsp;
                     </li>
                 
             </ul>
@@ -436,12 +429,12 @@
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>1.6k Words</span>
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>942 Words</span>
         </span>
     
     
         <span class="article-min2read article-meta-item">
-            <i class="fa-regular fa-clock"></i>&nbsp;<span>5 Mins</span>
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>3 Mins</span>
         </span>
     
     
@@ -457,106 +450,58 @@
             
 
             <div class="article-content markdown-body">
-                <p>對於機械鍵盤小白的我來說，每個軸體、手感、鍵帽等⋯⋯挑選鍵盤的考量對我來說都非常新奇，身為曾經買過一把機械鍵盤的我來說，正是個適合探索更多鍵盤的時機，於是決定購入觀望已久的鍵盤品牌 Nuphy — Halo 65。</p>
+                <p>大家在過往學習的經驗中，可能都有聽過歐幾里德這名鼎鼎大名的人物，是位在希臘化時期的數學家，有著著名著作「幾何原本」，在數學領域中有著極大化的貢獻，為現今眾多數學家所認同。</p>
 <p><figure class="image-caption"><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*kEKLUPfj6VwF0zPckvIrVg.png"
-                      alt="鍵盤本體"
-                ><figcaption>鍵盤本體</figcaption></figure></p>
-<blockquote>
-<h3 id="本文綱要"><a href="#本文綱要" class="headerlink" title="本文綱要"></a>本文綱要</h3><ul>
-<li>購買前的心理建設</li>
-<li>開箱和小插曲</li>
-<li>敲擊手感分享</li>
-<li>結論</li>
-<li>我的推薦碼</li>
+                     data-src="https://miro.medium.com/v2/resize:fit:1340/format:webp/1*xS3rVXn57DTerPNCZuOJ_g.jpeg"
+                      alt="Euclid and Geometry"
+                ><figcaption>Euclid and Geometry</figcaption></figure></p>
+<p>然而在古希臘的時代的數學家竟然能跟演算法畫上關係，畢竟演算法便是透過有限的步驟中，將給定的輸入做出最有效的解決，並且在執行玩這些有效的步驟中會有正當的終止，產生最後輸出結果，而歐幾里德演算法得以詮釋這些過程，歐幾里德演算法的問題是要在給定的兩個正整數 m 和 n 中找出兩束的最大公因數，因此我們可以列出以下解題步驟：</p>
+<ol>
+<li>找出餘數 (m % n)</li>
+<li>判斷餘數是否為零 (if (r &#x3D; 0) return n)</li>
+<li>被除數與餘數互換 (swap(m, n))</li>
+</ol>
+<p>那看到這邊可能人會有很多有很熟悉的感覺，畢竟我們曾經學習過求公因數的方法有：列舉法、質因數分解、短除法等⋯⋯那其中還有一個有趣的方法便是「輾轉相除法」，也就是我們今天要討論到的歐幾里德演算法，然而所謂的「輾轉」是什麼呢？可能是 Debug 睡不著的時候吧！哈！不過這樣也說得通，輾轉就是曲折的、不斷的過程，而我們正是透過這樣的特性來達成我們的演算法。</p>
+<p><figure class="image-caption"><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*ZtKWx4DZ0FY6SBSctDWtUQ.png"
+                      alt="輾轉相除法直式"
+                ><figcaption>輾轉相除法直式</figcaption></figure></p>
+<p><figure class="image-caption"><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*GLbMrGYdxAAT-3Vee-vXDA.png"
+                      alt="輾轉過程"
+                ><figcaption>輾轉過程</figcaption></figure></p>
+<p><figure class="image-caption"><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*GLbMrGYdxAAT-3Vee-vXDA.png"
+                      alt="過程以長方形圖是呈現"
+                ><figcaption>過程以長方形圖是呈現</figcaption></figure></p>
+<p>透過上方圖示我們便可看出輾轉的真正特性，透過互換且不斷地進行運算，已達到我們期望的結果，也可以從上圖中透過切割長方形的模式，在長方形中找出能切割的最大面積正方形，以此將整個長方形變成有正方形所組成的型態，這又可以回歸到上述所歸納的兩個解：</p>
+<ol>
+<li>餘數為 0 -&gt; 完整地切割</li>
+<li>餘數為 1 -&gt; 無法完整地切割</li>
+</ol>
+<p>想必讀到這裡一定更能理解輾轉相除法，接下來我們進行實作吧！</p>
+<h3 id="以下我們展示虛擬碼-Pseudocode"><a href="#以下我們展示虛擬碼-Pseudocode" class="headerlink" title="以下我們展示虛擬碼 (Pseudocode)"></a>以下我們展示虛擬碼 (Pseudocode)</h3><div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">Algorithm: <span class="built_in">EuclidGCD</span>(m, n)</span><br><span class="line">Input: Two integer m <span class="keyword">and</span> n.</span><br><span class="line">Output: The greatest common factor of m <span class="keyword">and</span> n.</span><br><span class="line">r &lt;- m % n</span><br><span class="line"><span class="keyword">while</span> r != <span class="number">0</span> <span class="keyword">do</span></span><br><span class="line">    m &lt;- n</span><br><span class="line">    n &lt;- r</span><br><span class="line">    r &lt;- m % n</span><br><span class="line"><span class="keyword">return</span> n</span><br><span class="line">以下我們使用 cpp 實作</span><br><span class="line"><span class="type">int</span> <span class="built_in">EuclidGCD</span>(<span class="type">int</span> m, <span class="type">int</span> n) &#123;</span><br><span class="line">    <span class="type">int</span> r = m % n;</span><br><span class="line">    <span class="keyword">while</span> (r != <span class="number">0</span>) &#123;</span><br><span class="line">        m = n;</span><br><span class="line">        n = r;</span><br><span class="line">        r = m % n;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> n;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>那上面我們討論到歐幾里德演算法的範疇實屬理論，那實際用途到底可以實現什麼情形呢？在分析這道問號題之前，我們可以再回想一下此演算法，最核心的就是要找出最大公因數，並且在由大化小的過程中，可以達成更有效率地轉換，畢竟是透過一系列輾轉的過程，所以其實輾轉相除法的應用層面非常廣，可以在密碼學、數學、計算機科學等⋯⋯領域做使用，甚至在音樂方面都能有實際上的應用，若想知道更多，網路上其實還有更多有趣的範例等著你們去挖掘呢！（維基百科下方的參考連結有超多有趣的例子！）</p>
+<h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><ul>
+<li><a class="link"   target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/56528787" >欧几里得与《几何原本》(上篇） <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://jason-chen-1992.weebly.com/home/-euclidean-algorithm" >【演算法】歐幾里得算法 Euclidean Algorithm <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
 </ul>
-</blockquote>
-<h2 id="購買前的心理建設"><a href="#購買前的心理建設" class="headerlink" title="購買前的心理建設"></a>購買前的心理建設</h2><p>首先，這隻鍵盤是 Nuphy 少有的正常尺寸設計，也就是非矮軸的設計，從各個開箱過 Nuphy 的內容中都可以看到鍵盤設計語言都是矮機械軸，難得推出了一把正常鍵帽的鍵盤，於是就手癢下單新推出的款式 - Halo 65，選擇的軸體是青軸版本的（G Pro Blue 2.0），外觀為挑選白色，加上預購所附贈的黑色鍵帽，沒有額外配上新出的手拖，不敢嘗試矮軸的原因是因為之前就是用原廠 Apple 鍵盤，沒有嘗試過機械軸的矮軸，便有點怕怕的 😨。</p>
-<p><figure class="image-caption"><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*nh7Q6SXwkOafr41Xcf1z8Q.png"
-                      alt="青軸版本"
-                ><figcaption>青軸版本</figcaption></figure></p>
-<h2 id="開箱和小插曲"><a href="#開箱和小插曲" class="headerlink" title="開箱和小插曲"></a>開箱和小插曲</h2><p>隔了大約兩個星期的時間，鍵盤到貨了，比客服給的預定時間還要快，畢竟當時看 Nuphy 官方的 Instagram 帳號每天都在發有人已經到貨或者是開箱影片，對於鍵盤的期待值簡直被拉滿到了極限！到貨時包裝可說非常扎實，除了鍵盤本體之外，還有預購附贈的透光鍵帽（而這組件帽會迎來開箱的一個小插曲～我們後文再見！）當時購買鍵盤並沒有把手拖放入購物車，當時想說買 65 % 的鍵盤就是要讓桌面空間變得更大，這手拖應該意義不大，所以便只有兩個大傢伙，不得不說，應該是因為國際貨運的緣故，包裝得非常扎實，一打開包裝就看到熟悉的 Nuphy 日本畫風少女，便趕緊把包裝給拆了！</p>
-<!-- <center class="multiple">
-    <img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*kS0XCBaLnimxfNoQW_RovQ.png"
-                      width="200"
-                >
-    <img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*zOqw6LpKMPaEF2tgFv7Log.png"
-                      width="200"
-                >
-</center> -->
-<p><figure class="image-caption"><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*kS0XCBaLnimxfNoQW_RovQ.png"
-                      alt="日系畫風少女"
-                ><figcaption>日系畫風少女</figcaption></figure><br><figure class="image-caption"><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*zOqw6LpKMPaEF2tgFv7Log.png"
-                      alt="包裝內容物"
-                ><figcaption>包裝內容物</figcaption></figure></p>
-<!-- 日系畫風少女 & 包裝內容物 -->
-
-<p>包裝內有鍵盤本體，一組可以自由更換不同顏色的按鍵，以及所有 Nuphy 推出的軸體、拔鍵器、充電線，還有附一組貼紙（嘿嘿～又可以亂貼了！），這時的我馬上打開所有可以更換的按鍵，畢竟等了兩個星期，心中早已有想像渴望的鍵盤顏色了！不過這時候迎來了小插曲，也是這次開箱最崩潰的時候，預購所附贈的鍵帽跟原先鍵盤的鍵帽高低不同 😡 當時的我興高采烈地把想更換的按鍵都拔掉，結果一一裝回去的時候才發現不對勁，誒！高度怎麼都不一樣，這樣打起來手感好怪，立馬寫信去詢問以及去官網查看，結果有個小發現，還真的高度不太一樣，也正如客服所回信的一般，黑色透光鍵帽如同櫻桃一般，高度不一樣。不過在查詢官網圖片時，我還有發現了一個很奇怪的，官網標示的黑色透光鍵帽，shift 鍵上是有箭頭的，而我收到的卻沒有，然而官方客服卻回應說是為了讓透光效果更均勻，我簡直⋯⋯真的⋯⋯真的不知道該有什麼反應，還是摸摸鼻子算了吧！（雖然還是有點小不平衡）</p>
-<!-- <center class="multiple">
-    <img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*OFULCyRHkQLvKcGkAAxjGQ.png"
-                      width="200"
-                >
-    <img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*T2v-Mfj5wnioRGFyLOPrig.png"
-                      width="200"
-                >
-</center> -->
-
-<p><figure class="image-caption"><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*OFULCyRHkQLvKcGkAAxjGQ.png"
-                      alt="小插曲"
-                ><figcaption>小插曲</figcaption></figure><br><figure class="image-caption"><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*T2v-Mfj5wnioRGFyLOPrig.png"
-                      alt="不同高低 shift 鍵"
-                ><figcaption>不同高低 shift 鍵</figcaption></figure></p>
-<!-- 小插曲——不同高低 shift 鍵 -->
-<h2 id="敲擊手感分享"><a href="#敲擊手感分享" class="headerlink" title="敲擊手感分享"></a>敲擊手感分享</h2><p>那我們分享了外觀就來分享敲擊鍵盤的手感吧！因為購買的是青軸，理所當然就是要夠吵還要搭上瘋狂輸出文字的感覺，不得不說敲擊下去之後的聲音回饋是真的滿爽的，跟原先使用的機械紅軸差很多，不過各有千秋，我都滿喜歡的，接著敲擊的手感滿清脆的，呈現了一定觸發的段落，打久了是不會感受到疲累的，還有種莫名打字的速度變快的錯覺，不過鍵盤的排列需要一點時間適應，例如刪除鍵，之前習慣直接往右上角的鍵按下去，但這把鍵盤不需要移到右上角，畢竟最右邊有一列功能鍵，再來就是 function 鍵了，起初真的不太會用，花了滿多時間爬文才得以上手，但還是不太熟悉就是了（有沒有習慣用小尺寸鍵盤的 Mac 用戶可以分享 🙃）。</p>
-<p>話說至此，對這把鍵盤的綜合評價還是很高的，敲擊的立回饋滿舒服的，真的是一把好的鍵盤，不過有一點不是很諒解，那就是鍵帽可以搖晃，也就是說不太穩，相較先前的鍵盤有點落差，不過打久了便不是太大的問題，不是很影響敲擊鍵盤的狀態。</p>
-<p><figure class="image-caption"><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*4PwD-P6aBdwGi72ztblR5Q.png"
-                      alt="鍵盤本人"
-                ><figcaption>鍵盤本人</figcaption></figure></p>
-<h2 id="結論"><a href="#結論" class="headerlink" title="結論"></a>結論</h2><p>總結下來，這次買新鍵盤的體驗，沒有辦法到滿分，畢竟花了將近四千塊錢的價格，卻收到標示和官網不太相同的鍵帽，這點實屬在內心扣了分，不過綜合其他鍵盤手感而言，能給予的評價還是挺高的，畢竟跟我想像中的青軸差不多，會讓我有瘋狂輸出之感，也就是手按到哪，就給予我力度以及聲音的回饋，再來就是 Nuphy 的鍵盤顏值是真的高，可客製化的顏色也是很多樣化，主打的黃、綠、橘搭配起來真是好看，再加上 RGB 的燈效，光害、爽度直接拉滿，所以還是挺推薦這組鍵盤的，想要嘗試高顏值且小尺寸的鍵盤，以及清脆的青軸敲擊感，選這把絕對沒問題，還在觀望的下單下去就對了！底下附上我的折扣碼可享有優惠哦～</p>
-<p>之後也會再補開箱個先前那把機械紅軸的，畢竟當時滿心期待就開始使用，完全忘卻可以分享這回事！底下連結可以試聽青軸一小時哦！哈！那我們下次見～～～</p>
-<!-- 這邊要遷入一段影片 -->
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/watch?time_continue=1&v=6EvcMMu6crM&embeds_widget_referrer=https%3A%2F%2Fmedium.com%2F&embeds_euri=https%3A%2F%2Fcdn.embedly.com%2F&embeds_origin=https%3A%2F%2Fcdn.embedly.com&feature=emb_logo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-
-<p>我的推薦碼：<br><a class="link"   target="_blank" rel="noopener" href="https://go.referralcandy.com/share/MV4GVPW" >https://go.referralcandy.com/share/MV4GVPW <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 <blockquote>
 <h3 id="How-to-reach-out-to-me"><a href="#How-to-reach-out-to-me" class="headerlink" title="How to reach out to me"></a>How to reach out to me</h3><ul>
 <li>Ins: <a class="link"   target="_blank" rel="noopener" href="https://www.instagram.com/lcho____/" >@lcho____ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
 <li>Linkedin: <a class="link"   target="_blank" rel="noopener" href="https://www.linkedin.com/in/1chooo/" >Hugo ChunHo Lin <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
 <li>GitHub: <a class="link"   target="_blank" rel="noopener" href="https://github.com/1chooo" >1chooo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
 <li>About me: <a class="link"   target="_blank" rel="noopener" href="https://sites.google.com/g.ncu.edu.tw/1chooo" >1chooo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
-<li>Email: <a class="link"   href="mailto:&#104;&#x75;&#x67;&#111;&#x39;&#x37;&#x30;&#x32;&#49;&#55;&#64;&#x67;&#109;&#x61;&#x69;&#108;&#46;&#99;&#x6f;&#x6d;" >&#104;&#x75;&#x67;&#111;&#x39;&#x37;&#x30;&#x32;&#49;&#55;&#64;&#x67;&#109;&#x61;&#x69;&#108;&#46;&#99;&#x6f;&#x6d; <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+<li>Email: <a class="link"   href="mailto:&#x68;&#x75;&#x67;&#111;&#57;&#55;&#x30;&#50;&#x31;&#55;&#x40;&#x67;&#109;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;" >&#x68;&#x75;&#x67;&#111;&#57;&#55;&#x30;&#50;&#x31;&#55;&#x40;&#x67;&#109;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d; <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
 </ul>
 </blockquote>
 
@@ -568,11 +513,11 @@
                 <ul class="post-tags-box">
                     
                         <li class="tag-item">
-                            <a href="/tags/Nuphy/">#Nuphy</a>&nbsp;
+                            <a href="/tags/algorithm/">#algorithm</a>&nbsp;
                         </li>
                     
                         <li class="tag-item">
-                            <a href="/tags/keyboard/">#keyboard</a>&nbsp;
+                            <a href="/tags/note/">#note</a>&nbsp;
                         </li>
                     
                 </ul>
@@ -584,27 +529,27 @@
     <div class="recommended-article-header">
      <i aria-hidden="true"></i><span>Recommendation</span>
     </div>
-    <div class="recommended-article-group"><a class="recommended-article-item" href="/2023/07/29/pick_ipad/" title="剛上大學的我如何挑到適合我的平板！？" rel="bookmark">
-  <img src="/images/wallhaven-wqery6-light.webp" alt="剛上大學的我如何挑到適合我的平板！？">
-  <span class="title">剛上大學的我如何挑到適合我的平板！？</span>
-</a><a class="recommended-article-item" href="/2023/07/29/no_book/" title="平板能輔助大學生上課嗎？" rel="bookmark">
+    <div class="recommended-article-group"><a class="recommended-article-item" href="/2023/07/29/no_book/" title="平板能輔助大學生上課嗎？" rel="bookmark">
   <img src="/images/wallhaven-wqery6-light.webp" alt="平板能輔助大學生上課嗎？">
   <span class="title">平板能輔助大學生上課嗎？</span>
-</a><a class="recommended-article-item" href="/2023/07/29/euclid/" title="演算法第一講——Euclid Algorithm 歐幾里得演算法" rel="bookmark">
-  <img src="https://miro.medium.com/v2/resize:fit:1340/format:webp/1*xS3rVXn57DTerPNCZuOJ_g.jpeg" alt="演算法第一講——Euclid Algorithm 歐幾里得演算法">
-  <span class="title">演算法第一講——Euclid Algorithm 歐幾里得演算法</span>
+</a><a class="recommended-article-item" href="/2023/07/29/projects_intro/snake_game/" title="做個小貪吃蛇來玩吧！" rel="bookmark">
+  <img src="/images/wallhaven-wqery6-light.webp" alt="做個小貪吃蛇來玩吧！">
+  <span class="title">做個小貪吃蛇來玩吧！</span>
+</a><a class="recommended-article-item" href="/2023/07/29/pick_ipad/" title="剛上大學的我如何挑到適合我的平板！？" rel="bookmark">
+  <img src="/images/wallhaven-wqery6-light.webp" alt="剛上大學的我如何挑到適合我的平板！？">
+  <span class="title">剛上大學的我如何挑到適合我的平板！？</span>
 </a></div>
    </div>
    <div class="recommended-mobile">
    <div class="recommended-article-header">
      <i aria-hidden="true"></i><span>Recommendation</span>
    </div>
-   <div class="recommended-article-group"><a class="recommended-article-item" href="/2023/07/29/pick_ipad/" title="剛上大學的我如何挑到適合我的平板！？" rel="bookmark">
-  <img src="/images/wallhaven-wqery6-light.webp" alt="剛上大學的我如何挑到適合我的平板！？">
-  <span class="title">剛上大學的我如何挑到適合我的平板！？</span>
-</a><a class="recommended-article-item" href="/2023/07/29/no_book/" title="平板能輔助大學生上課嗎？" rel="bookmark">
+   <div class="recommended-article-group"><a class="recommended-article-item" href="/2023/07/29/no_book/" title="平板能輔助大學生上課嗎？" rel="bookmark">
   <img src="/images/wallhaven-wqery6-light.webp" alt="平板能輔助大學生上課嗎？">
   <span class="title">平板能輔助大學生上課嗎？</span>
+</a><a class="recommended-article-item" href="/2023/07/29/projects_intro/snake_game/" title="做個小貪吃蛇來玩吧！" rel="bookmark">
+  <img src="/images/wallhaven-wqery6-light.webp" alt="做個小貪吃蛇來玩吧！">
+  <span class="title">做個小貪吃蛇來玩吧！</span>
 </a></div>
    </div>
   </div>
@@ -615,13 +560,13 @@
                         <div class="article-prev">
                             <a class="prev"
                             rel="prev"
-                            href="/2023/07/29/pick_ipad/"
+                            href="/2023/07/29/no_book/"
                             >
                                 <span class="left arrow-icon flex-center">
                                     <i class="fa-solid fa-chevron-left"></i>
                                 </span>
                                 <span class="title flex-center">
-                                    <span class="post-nav-title-item">剛上大學的我如何挑到適合我的平板！？</span>
+                                    <span class="post-nav-title-item">平板能輔助大學生上課嗎？</span>
                                     <span class="post-nav-item">Prev posts</span>
                                 </span>
                             </a>
@@ -631,10 +576,10 @@
                         <div class="article-next">
                             <a class="next"
                             rel="next"
-                            href="/2023/07/29/no_book/"
+                            href="/2023/07/29/python_venv/conda_tips/"
                             >
                                 <span class="title flex-center">
-                                    <span class="post-nav-title-item">平板能輔助大學生上課嗎？</span>
+                                    <span class="post-nav-title-item">我在 Conda 常用的指令</span>
                                     <span class="post-nav-item">Next posts</span>
                                 </span>
                                 <span class="right arrow-icon flex-center">
@@ -712,8 +657,8 @@
                 <div class="post-toc-wrap">
     <div class="post-toc">
         <div class="toc-title">On this page</div>
-        <div class="page-title">Nuphy 鍵盤初體驗</div>
-        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%AC%E6%96%87%E7%B6%B1%E8%A6%81"><span class="nav-text">本文綱要</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B3%BC%E8%B2%B7%E5%89%8D%E7%9A%84%E5%BF%83%E7%90%86%E5%BB%BA%E8%A8%AD"><span class="nav-text">購買前的心理建設</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%96%8B%E7%AE%B1%E5%92%8C%E5%B0%8F%E6%8F%92%E6%9B%B2"><span class="nav-text">開箱和小插曲</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B2%E6%93%8A%E6%89%8B%E6%84%9F%E5%88%86%E4%BA%AB"><span class="nav-text">敲擊手感分享</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B5%90%E8%AB%96"><span class="nav-text">結論</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#How-to-reach-out-to-me"><span class="nav-text">How to reach out to me</span></a></li></ol>
+        <div class="page-title">演算法第一講——Euclid Algorithm 歐幾里得演算法</div>
+        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%A5%E4%B8%8B%E6%88%91%E5%80%91%E5%B1%95%E7%A4%BA%E8%99%9B%E6%93%AC%E7%A2%BC-Pseudocode"><span class="nav-text">以下我們展示虛擬碼 (Pseudocode)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Reference"><span class="nav-text">Reference</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#How-to-reach-out-to-me"><span class="nav-text">How to reach out to me</span></a></li></ol>
 
     </div>
 </div>
