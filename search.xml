@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Git Note</title>
+    <title>Git 軟體開發新手村！</title>
     <url>/1chooo-blog/2023/07/30/git_tips/</url>
     <content><![CDATA[<h2 id="Generate-SSH-key-git-config"><a href="#Generate-SSH-key-git-config" class="headerlink" title="Generate SSH key, git --config"></a>Generate <code>SSH key</code>, <code>git --config</code></h2><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># New Algorithm</span></span><br><span class="line">$ ssh-keygen -t ed25519 -C <span class="string">&quot;Gitlab SSH Key&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Old Method</span></span><br><span class="line">$ ssh-keygen -t rsa -b 4096 -C <span class="string">&quot;your_email@example.com&quot;</span></span><br><span class="line"></span><br><span class="line">~/.ssh/id_ed25519</span><br><span class="line"></span><br><span class="line"><span class="comment"># Click Enter Twice</span></span><br><span class="line">$ Enter a file <span class="keyword">in</span> <span class="built_in">which</span> to save the key (/Users/you/.ssh/id_ed25519):</span><br><span class="line">$ Enter passphrase (empty <span class="keyword">for</span> no passphrase): [Type a passphrase]</span><br><span class="line">$ Enter same passphrase again: [Type passphrase again]</span><br><span class="line"></span><br><span class="line">$ <span class="built_in">cd</span> .ssh</span><br><span class="line">$ <span class="built_in">cat</span> id_rsa.pub</span><br><span class="line"></span><br><span class="line">ssh -T git@gitlab.com</span><br><span class="line">$ git config --global user.name <span class="string">&quot;your_username&quot;</span></span><br><span class="line">$ git config --global user.email <span class="string">&quot;your_email_address@example.com&quot;</span></span><br><span class="line"></span><br><span class="line">$ git config --list</span><br></pre></td></tr></table></figure></div>
 
@@ -53,7 +53,7 @@
   </entry>
   <entry>
     <title>平板能輔助大學生上課嗎？</title>
-    <url>/1chooo-blog/2023/07/29/no_book/</url>
+    <url>/1chooo-blog/2023/07/30/no_book/</url>
     <content><![CDATA[<blockquote>
 <p>誒～怎麼身邊上課的人開始都不帶書了！？</p>
 </blockquote>
@@ -121,7 +121,7 @@
 <li>Linkedin: <a class="link"   href="https://www.linkedin.com/in/1chooo/" >Hugo ChunHo Lin <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
 <li>GitHub: <a class="link"   href="https://github.com/1chooo" >1chooo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
 <li>About me: <a class="link"   href="https://sites.google.com/g.ncu.edu.tw/1chooo" >1chooo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
-<li>Email: <a class="link"   href="mailto:&#104;&#x75;&#103;&#x6f;&#57;&#55;&#48;&#50;&#49;&#x37;&#x40;&#x67;&#x6d;&#97;&#105;&#108;&#46;&#99;&#111;&#109;" >&#104;&#x75;&#103;&#x6f;&#57;&#55;&#48;&#50;&#49;&#x37;&#x40;&#x67;&#x6d;&#97;&#105;&#108;&#46;&#99;&#111;&#109; <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+<li>Email: <a class="link"   href="mailto:&#x68;&#x75;&#x67;&#111;&#57;&#x37;&#x30;&#50;&#x31;&#55;&#x40;&#x67;&#x6d;&#x61;&#105;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;" >&#x68;&#x75;&#x67;&#111;&#57;&#x37;&#x30;&#50;&#x31;&#55;&#x40;&#x67;&#x6d;&#x61;&#105;&#x6c;&#x2e;&#x63;&#x6f;&#x6d; <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
 </ul>
 </blockquote>
 ]]></content>
@@ -136,7 +136,7 @@
   </entry>
   <entry>
     <title>剛上大學的我如何挑到適合我的平板！？</title>
-    <url>/1chooo-blog/2023/07/29/pick_ipad/</url>
+    <url>/1chooo-blog/2023/07/30/pick_ipad/</url>
     <content><![CDATA[<p>疫情嚴峻的 2021 年中，所有戶外活動皆需要暫停，身為大一生，參與的校園活動被迫中止，連課程都改為遠距教學，學習方法勢必有所改變</p>
 <p><figure class="image-caption"><img  
                      lazyload
@@ -169,7 +169,7 @@
 <li>Linkedin: <a class="link"   href="https://www.linkedin.com/in/1chooo/" >Hugo ChunHo Lin <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
 <li>GitHub: <a class="link"   href="https://github.com/1chooo" >1chooo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
 <li>About me: <a class="link"   href="https://sites.google.com/g.ncu.edu.tw/1chooo" >1chooo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
-<li>Email: <a class="link"   href="mailto:&#x68;&#117;&#x67;&#x6f;&#x39;&#x37;&#48;&#50;&#49;&#x37;&#x40;&#x67;&#109;&#x61;&#x69;&#108;&#x2e;&#99;&#111;&#x6d;" >&#x68;&#117;&#x67;&#x6f;&#x39;&#x37;&#48;&#50;&#49;&#x37;&#x40;&#x67;&#109;&#x61;&#x69;&#108;&#x2e;&#99;&#111;&#x6d; <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+<li>Email: <a class="link"   href="mailto:&#104;&#117;&#x67;&#x6f;&#57;&#55;&#x30;&#x32;&#49;&#55;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;" >&#104;&#117;&#x67;&#x6f;&#57;&#55;&#x30;&#x32;&#49;&#55;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d; <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
 </ul>
 </blockquote>
 ]]></content>
@@ -184,7 +184,7 @@
   </entry>
   <entry>
     <title>做個小貪吃蛇來玩吧！</title>
-    <url>/1chooo-blog/2023/07/29/projects_intro/snake_game/</url>
+    <url>/1chooo-blog/2023/07/30/projects_intro/snake_game/</url>
     <content><![CDATA[<p>還記得當時剛學習程式語言的時候，對於什麼知識都不懂，連搜尋能力也沒有，常常搜不到關鍵字，問題也解決不了，不過當時懵懂無知的狀態，完成了基礎貪吃蛇的小遊戲，所以決定撰寫一篇文章來記錄當時的過程。</p>
 <blockquote>
 <h3 id="🧸-本文綱要："><a href="#🧸-本文綱要：" class="headerlink" title="🧸 本文綱要："></a>🧸 本文綱要：</h3><ol>
@@ -255,12 +255,12 @@
 <li>Linkedin: <a class="link"   href="https://www.linkedin.com/in/1chooo/" >Hugo ChunHo Lin <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
 <li>GitHub: <a class="link"   href="https://github.com/1chooo" >1chooo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
 <li>About me: <a class="link"   href="https://sites.google.com/g.ncu.edu.tw/1chooo" >1chooo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
-<li>Email: <a class="link"   href="mailto:&#104;&#117;&#103;&#x6f;&#x39;&#x37;&#48;&#50;&#x31;&#x37;&#64;&#103;&#x6d;&#97;&#x69;&#108;&#46;&#x63;&#111;&#x6d;" >&#104;&#117;&#103;&#x6f;&#x39;&#x37;&#48;&#50;&#x31;&#x37;&#64;&#103;&#x6d;&#97;&#x69;&#108;&#46;&#x63;&#111;&#x6d; <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+<li>Email: <a class="link"   href="mailto:&#x68;&#117;&#x67;&#x6f;&#57;&#x37;&#48;&#50;&#x31;&#x37;&#64;&#103;&#x6d;&#x61;&#105;&#108;&#x2e;&#x63;&#111;&#x6d;" >&#x68;&#117;&#x67;&#x6f;&#57;&#x37;&#48;&#50;&#x31;&#x37;&#64;&#103;&#x6d;&#x61;&#105;&#108;&#x2e;&#x63;&#111;&#x6d; <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
 </ul>
 </blockquote>
 ]]></content>
       <categories>
-        <category>project</category>
+        <category>Project</category>
       </categories>
       <tags>
         <tag>python</tag>
@@ -269,7 +269,7 @@
   </entry>
   <entry>
     <title>我在 Conda 常用的指令</title>
-    <url>/1chooo-blog/2023/07/29/python_venv/conda_tips/</url>
+    <url>/1chooo-blog/2023/07/30/python_venv/conda_tips/</url>
     <content><![CDATA[<blockquote>
 <p>每次用 Conda 都要在搜尋一次嗎？以後就看這篇吧！</p>
 </blockquote>
@@ -339,11 +339,11 @@
 <li>Linkedin: <a class="link"   href="https://www.linkedin.com/in/1chooo/" >Hugo ChunHo Lin <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
 <li>GitHub: <a class="link"   href="https://github.com/1chooo" >1chooo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
 <li>About me: <a class="link"   href="https://sites.google.com/g.ncu.edu.tw/1chooo" >1chooo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
-<li>Email: <a class="link"   href="mailto:&#x68;&#x75;&#103;&#111;&#57;&#x37;&#48;&#50;&#49;&#55;&#64;&#103;&#x6d;&#x61;&#x69;&#x6c;&#46;&#99;&#x6f;&#109;" >&#x68;&#x75;&#103;&#111;&#57;&#x37;&#48;&#50;&#49;&#55;&#64;&#103;&#x6d;&#x61;&#x69;&#x6c;&#46;&#99;&#x6f;&#109; <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+<li>Email: <a class="link"   href="mailto:&#x68;&#117;&#103;&#111;&#x39;&#55;&#x30;&#50;&#x31;&#55;&#64;&#103;&#109;&#x61;&#105;&#108;&#46;&#99;&#x6f;&#x6d;" >&#x68;&#117;&#103;&#111;&#x39;&#55;&#x30;&#50;&#x31;&#55;&#64;&#103;&#109;&#x61;&#105;&#108;&#46;&#99;&#x6f;&#x6d; <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
 </ul>
 ]]></content>
       <categories>
-        <category>tips</category>
+        <category>DEV</category>
       </categories>
       <tags>
         <tag>python</tag>
@@ -353,11 +353,11 @@
   </entry>
   <entry>
     <title>看完 Conda 教學還不夠！？這篇看完 Python 環境再也沒問題了！</title>
-    <url>/1chooo-blog/2023/07/29/python_venv/pyvenv/</url>
+    <url>/1chooo-blog/2023/07/30/python_venv/pyvenv/</url>
     <content><![CDATA[<p>正在籌劃中！近景期待！</p>
 ]]></content>
       <categories>
-        <category>tips</category>
+        <category>DEV</category>
       </categories>
       <tags>
         <tag>python</tag>
@@ -366,7 +366,7 @@
   </entry>
   <entry>
     <title>Nuphy 鍵盤初體驗</title>
-    <url>/1chooo-blog/2023/07/29/unboxing/nuphy_unboxing/</url>
+    <url>/1chooo-blog/2023/07/30/unboxing/nuphy_unboxing/</url>
     <content><![CDATA[<p>對於機械鍵盤小白的我來說，每個軸體、手感、鍵帽等⋯⋯挑選鍵盤的考量對我來說都非常新奇，身為曾經買過一把機械鍵盤的我來說，正是個適合探索更多鍵盤的時機，於是決定購入觀望已久的鍵盤品牌 Nuphy — Halo 65。</p>
 <p><figure class="image-caption"><img  
                      lazyload
@@ -466,12 +466,12 @@
 <li>Linkedin: <a class="link"   href="https://www.linkedin.com/in/1chooo/" >Hugo ChunHo Lin <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
 <li>GitHub: <a class="link"   href="https://github.com/1chooo" >1chooo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
 <li>About me: <a class="link"   href="https://sites.google.com/g.ncu.edu.tw/1chooo" >1chooo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
-<li>Email: <a class="link"   href="mailto:&#104;&#117;&#103;&#111;&#x39;&#55;&#x30;&#50;&#x31;&#55;&#64;&#103;&#109;&#x61;&#105;&#x6c;&#x2e;&#99;&#x6f;&#x6d;" >&#104;&#117;&#103;&#111;&#x39;&#55;&#x30;&#50;&#x31;&#55;&#64;&#103;&#109;&#x61;&#105;&#x6c;&#x2e;&#99;&#x6f;&#x6d; <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+<li>Email: <a class="link"   href="mailto:&#x68;&#x75;&#x67;&#111;&#x39;&#55;&#x30;&#x32;&#x31;&#55;&#x40;&#103;&#x6d;&#97;&#x69;&#x6c;&#46;&#99;&#x6f;&#x6d;" >&#x68;&#x75;&#x67;&#111;&#x39;&#55;&#x30;&#x32;&#x31;&#55;&#x40;&#103;&#x6d;&#97;&#x69;&#x6c;&#46;&#99;&#x6f;&#x6d; <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
 </ul>
 </blockquote>
 ]]></content>
       <categories>
-        <category>unboxing</category>
+        <category>Unboxing</category>
       </categories>
       <tags>
         <tag>Nuphy</tag>
@@ -480,7 +480,7 @@
   </entry>
   <entry>
     <title>演算法第一講——Euclid Algorithm 歐幾里得演算法</title>
-    <url>/1chooo-blog/2023/07/29/ds_and_alg/alg/euclid/</url>
+    <url>/1chooo-blog/2023/07/30/ds_and_alg/alg/euclid/</url>
     <content><![CDATA[<p>大家在過往學習的經驗中，可能都有聽過歐幾里德這名鼎鼎大名的人物，是位在希臘化時期的數學家，有著著名著作「幾何原本」，在數學領域中有著極大化的貢獻，為現今眾多數學家所認同。</p>
 <p><figure class="image-caption"><img  
                      lazyload
@@ -532,7 +532,7 @@
 <li>Linkedin: <a class="link"   href="https://www.linkedin.com/in/1chooo/" >Hugo ChunHo Lin <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
 <li>GitHub: <a class="link"   href="https://github.com/1chooo" >1chooo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
 <li>About me: <a class="link"   href="https://sites.google.com/g.ncu.edu.tw/1chooo" >1chooo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
-<li>Email: <a class="link"   href="mailto:&#x68;&#x75;&#x67;&#111;&#x39;&#x37;&#x30;&#50;&#x31;&#55;&#x40;&#x67;&#109;&#x61;&#x69;&#x6c;&#x2e;&#99;&#x6f;&#x6d;" >&#x68;&#x75;&#x67;&#111;&#x39;&#x37;&#x30;&#50;&#x31;&#55;&#x40;&#x67;&#109;&#x61;&#x69;&#x6c;&#x2e;&#99;&#x6f;&#x6d; <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+<li>Email: <a class="link"   href="mailto:&#104;&#x75;&#x67;&#111;&#57;&#55;&#48;&#50;&#x31;&#55;&#64;&#x67;&#109;&#x61;&#105;&#x6c;&#46;&#x63;&#x6f;&#x6d;" >&#104;&#x75;&#x67;&#111;&#57;&#55;&#48;&#50;&#x31;&#55;&#64;&#x67;&#109;&#x61;&#105;&#x6c;&#46;&#x63;&#x6f;&#x6d; <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
 </ul>
 </blockquote>
 ]]></content>
