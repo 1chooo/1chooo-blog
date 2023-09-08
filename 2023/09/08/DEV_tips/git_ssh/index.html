@@ -31,7 +31,7 @@
 <meta property="og:image" content="https://1chooo.github.io/images/post/DEV/git_ssh/04.png">
 <meta property="og:image" content="https://1chooo.github.io/images/post/DEV/git_ssh/05.png">
 <meta property="article:published_time" content="2023-09-07T16:00:00.000Z">
-<meta property="article:modified_time" content="2023-09-08T07:14:14.868Z">
+<meta property="article:modified_time" content="2023-09-08T07:22:49.114Z">
 <meta property="article:author" content="Hugo ChunHo Lin">
 <meta property="article:tag" content="Git">
 <meta property="article:tag" content="GitHub">
@@ -388,8 +388,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2023-09-08 15:14:14</span>
-            <span class="mobile">2023-09-08 15:14:14</span>
+            <span class="desktop">2023-09-08 15:22:49</span>
+            <span class="mobile">2023-09-08 15:22:49</span>
             <span class="hover-info">Updated</span>
         </span>
     
@@ -488,7 +488,7 @@
 <h3 id="2-取得-public-ssh-key"><a href="#2-取得-public-ssh-key" class="headerlink" title="2. 取得 public ssh key"></a>2. 取得 public ssh key</h3><p>接著我們要進到剛剛放置 key 的位置，因此我們照著以下流程，把 public 的 key 拿出（副檔名為 <code>.pub</code>），要特別注意 GitHub 只需要 public 的 key，private 要自己留好！千萬不要給任何人！</p>
 <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> .ssh</span><br><span class="line">$ <span class="built_in">ls</span></span><br><span class="line">id_rsa          id_rsa.pub</span><br><span class="line"></span><br><span class="line">$ <span class="built_in">cat</span> id_rsa.pub</span><br></pre></td></tr></table></figure></div>
 
-<p>街下來就把 <code>cat id_rsa.pub</code> 的內容複製下來，我們就可以回 GitHub 做最後一步設定了！</p>
+<p>接下來就把 <code>cat id_rsa.pub</code> 的內容複製下來，我們就可以回 GitHub 做最後一步設定了！</p>
 <h3 id="3-把-public-key-設定到-GitHub"><a href="#3-把-public-key-設定到-GitHub" class="headerlink" title="3. 把 public key 設定到 GitHub"></a>3. 把 public key 設定到 GitHub</h3><p>接下來我們要把 public key 設定到 GitHub，這樣 GitHub 才能辨識你的電腦，讓你可以透過 ssh 連線到 GitHub，這樣就可以真的達到不用每次 push 都要輸入帳號密碼了！接下來將用截圖畫面的方式展示步驟！</p>
 <h4 id="A-前往-GitHub-設定"><a href="#A-前往-GitHub-設定" class="headerlink" title="A. 前往 GitHub 設定"></a>A. 前往 GitHub 設定</h4><p><img  
                      lazyload
@@ -529,7 +529,7 @@
 <li>Linkedin: <a class="link"   target="_blank" rel="noopener" href="https://www.linkedin.com/in/1chooo/" >Hugo ChunHo Lin <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
 <li>GitHub: <a class="link"   target="_blank" rel="noopener" href="https://github.com/1chooo" >1chooo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
 <li>My Linktree: <a href="https://1chooo.github.io/linktree/">1chooo’s Linktree</a></li>
-<li>Email: <a class="link"   href="mailto:&#x68;&#117;&#103;&#111;&#57;&#55;&#x30;&#50;&#49;&#55;&#64;&#103;&#x6d;&#97;&#105;&#x6c;&#x2e;&#99;&#x6f;&#109;" >&#x68;&#117;&#103;&#111;&#57;&#55;&#x30;&#50;&#49;&#55;&#64;&#103;&#x6d;&#97;&#105;&#x6c;&#x2e;&#99;&#x6f;&#109; <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
+<li>Email: <a class="link"   href="mailto:&#x68;&#x75;&#103;&#111;&#x39;&#55;&#48;&#50;&#49;&#55;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#99;&#x6f;&#x6d;" >&#x68;&#x75;&#103;&#111;&#x39;&#55;&#48;&#50;&#49;&#55;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#99;&#x6f;&#x6d; <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></li>
 </ul>
 
             </div>
